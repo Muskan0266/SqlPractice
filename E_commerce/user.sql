@@ -100,3 +100,8 @@ UNION
 SELECT *
 FROM users
     RIGHT JOIN orders ON users.id = orders.id;
+SELECT id
+FROM users
+UNION ALL
+SELECT id
+FROM orders
